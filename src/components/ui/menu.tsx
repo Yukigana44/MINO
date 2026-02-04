@@ -13,7 +13,19 @@ export default function Menu() {
       </NavLink>
 
       <NavLink to="/map" className={linkClass}>
+        📆 Evènements
+      </NavLink>
+
+      <NavLink to="/map" className={linkClass}>
         🗺️ Map
+      </NavLink>
+
+      <NavLink to="/map" className={linkClass}>
+        🔍 Rechercher
+      </NavLink>
+
+      <NavLink to="/map" className={linkClass}>
+        👤 Profil
       </NavLink>
     </nav>
   );
