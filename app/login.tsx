@@ -10,11 +10,14 @@ export default function Login() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Bienvenue</Text>
+      <Text style={styles.title}>Ravi de vous revoir</Text>
       <TextInput placeholder="Email" style={styles.input} autoCapitalize="none" />
       <TextInput placeholder="Mot de passe" style={styles.input} secureTextEntry />
       <Pressable style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Se connecter</Text>
+      </Pressable>
+      <Pressable style={styles.button} onPress={handleLogin}>
+        <Text style={styles.buttonText}>S'incrire</Text>
       </Pressable>
     </View>
   );
