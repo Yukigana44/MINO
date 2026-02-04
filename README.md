@@ -1,50 +1,81 @@
-# Welcome to your Expo app 👋
+📚 MINO - Recréer du lien entre lecteurs et librairies
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+MINO est une application mobile développée en React Native visant à revitaliser le lien social entre les lecteurs et les librairies indépendantes. À une époque où le numérique semble isoler, MINO utilise la technologie pour ramener l'utilisateur vers le physique et l'humain.
 
-## Get started
+🚀 Caractéristiques Techniques
 
-1. Install dependencies
+Framework : React Native (Cross-platform iOS/Android)
+Transpiler : Babel (Configuration optimisée pour le JavaScript moderne)
+Cartographie Native : Intégration hybride utilisant les API natives :
+📍 Apple Plan pour les utilisateurs iOS.
+📍 Google Maps pour les utilisateurs Android.
+Avantage : Une performance fluide et une interface familière selon l'OS utilisé.
+Accessibilité : Respect des normes WCAG pour une lecture inclusive.
 
-   ```bash
-   npm install
-   ```
+🛠 Installation et Lancement
 
-2. Start the app
+Prérequis
+Node.js (v16 ou supérieur)
 
-   ```bash
-   npx expo start
-   ```
+Watchman (pour macOS)
 
-In the output, you'll find options to open the app in a
+CocoaPods (pour iOS)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Android Studio / Xcode
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+# Installation
 
-## Get a fresh project
+# Cloner le projet :
+Bash
+git clone https://github.com/Yukigana44/MINO.git
+cd MINO
 
-When you're ready, run:
+# Installer les dépendances :
+Bash
+npm install
+# ou
+yarn install
 
-```bash
-npm run reset-project
-```
+# Installer les pods (iOS uniquement) :
+Bash
+npx pod-install
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Démarrage
+Android : npx react-native run-android
+iOS : npx react-native run-ios
 
-## Learn more
+📖 Concept du Projet
 
-To learn more about developing your project with Expo, look at the following resources:
+Le projet MINO répond à une problématique majeure : Comment la technologie peut-elle servir la culture physique ? 
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Fonctionnalités Clés :
+Géolocalisation intelligente : Trouver les librairies et bouquinistes les plus proches de vous.
+Médiation culturelle : Accès aux événements, ateliers et clubs de lecture locaux.
+Profils personnalisés : Gestion de vos préférences de lecture et interactions avec la communauté.
+Sobriété numérique : Une interface pensée pour être légère, efficace et non-addictive.
 
-## Join the community
+🏗 Structure du Projet (Intégration)
 
-Join our community of developers creating universal apps.
+MinoNative
+├── src/
+│   ├── assets/         # Ressources (Images, icônes, fonts)
+│   ├── components/     # Éléments d'interface réutilisables (Boutons, Cards, etc.)
+│   ├── navigation/     # Configuration des flux (Stack, Tabs, Drawer)
+│   ├── screens/        # Pages principales de l'application
+│   │   ├── Home/
+│   │   ├── Map/        # Écran de géolocalisation des librairies
+│   │   ├── Profile/
+│   │   └── ...
+│   ├── services/       # Logique métier et appels API (Firebase ou autre)
+│   ├── theme/          # Constantes de style (Couleurs, typographies)
+│   └── utils/          # Fonctions utilitaires et helpers
+├── App.js              # Point d'entrée de l'application
+├── app.json            # Configuration Expo / Native
+├── babel.config.js     # Configuration Babel
+└── package.json        # Dépendances et scripts de lancement
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+🧑‍💻 Auteur
+Julie FRUCHARD – M1 Lead Développeur Front-End (ECV Nantes). Projet réalisé dans le cadre du mémoire de fin d'étude 2026.
+
+Note : Ce projet a été développé avec une approche centrée sur l'utilisateur (UX) et une volonté de réduire l'impact écologique du code (Green IT).
